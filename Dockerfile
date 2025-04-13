@@ -1,4 +1,4 @@
-FROM rust:1.74
+FROM rust:1.85
 
 WORKDIR /usr/src/aws-cost-rs
 COPY . .
