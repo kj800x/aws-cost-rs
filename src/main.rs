@@ -65,7 +65,7 @@ async fn main() {
 
     let config = aws_config::load_from_env().await;
     let client = aws_sdk_costexplorer::Client::new(&config);
-    println!("Hi Gelilia");
+    println!("Hi Francesco");
 
     loop {
         println!("Fetching data...");
