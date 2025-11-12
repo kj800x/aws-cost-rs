@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: aws-cost-rs
+  namespace: home-sensors
+spec:
+  type: LoadBalancer
+  selector:
+    app: aws-cost-rs
+  ports:
+    - name: http
+      protocol: TCP
+      port: 9100
+      targetPort: 9090

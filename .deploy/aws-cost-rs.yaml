@@ -1,0 +1,3 @@
+team: home-sensors
+kind: worker
+namespace: home-sensors
