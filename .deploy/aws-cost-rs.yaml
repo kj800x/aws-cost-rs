@@ -1,3 +1,8 @@
+artifactRepo:
+  owner: kj800x
+  repo: aws-cost-rs
+  branch: master
+
 team: home-sensors
 kind: worker
 namespace: home-sensors
