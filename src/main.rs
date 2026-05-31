@@ -12,12 +12,12 @@ const DAILY_CHECK_FREQUENCY: u64 = 1;
 
 // check equally spaced based on DAILY_CHECK_FREQUENCY
 const fn sleep_delay_secs() -> u64 {
-    return (60 * 60 * 24) / DAILY_CHECK_FREQUENCY;
+    (60 * 60 * 24) / DAILY_CHECK_FREQUENCY
 }
 
 // 5 minutes after the sleep delay, we expire the metric value if we haven't gotten an update
 const fn metric_timeout_secs() -> u64 {
-    return sleep_delay_secs() + (60 * 5);
+    sleep_delay_secs() + (60 * 5)
 }
 
 fn start_of_month() -> String {
